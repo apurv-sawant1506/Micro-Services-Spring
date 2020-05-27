@@ -2,6 +2,7 @@ package com.in28minutes.microservices.currencyexchangeservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /*
  * To run this application in many port configurations:
@@ -15,6 +16,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
+//@EnableEurekaClient is used to let this application register itself with eureka naming server
+@EnableEurekaClient
 public class CurrencyExchangeServiceApplication {
 
 	public static void main(String[] args) {
